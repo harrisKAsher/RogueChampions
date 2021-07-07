@@ -13,7 +13,7 @@ import {
 	HydraPatrol,
 	WeaponMaster,
 	ExperimentalWeapons,
-	EncounterSetsMap
+	EncounterSetsMap, Anachrona, MasterofTime, Temporal
 } from "@/consts/encountersets"
 import {Expansion} from "@/types/expansion";
 
@@ -55,6 +55,19 @@ export const GreenGoblin : Expansion = {
 		GoblinGimmicks.name,
 		RiskyBusiness.name,
 		MutagenFormula.name,
+		"Norman Osborn",
+		"Green Goblin"
+	]
+}
+
+export const Kang : Expansion = {
+	name: 'Kang',
+	encounterSets: [
+		Anachrona.name,
+		MasterofTime.name,
+		Temporal.name,
+		EncounterSetsMap.Kang.name,
+		"The Once and Future Kang"
 	]
 }
 
@@ -90,6 +103,11 @@ export const MsMarvel : Expansion = {
 	encounterSets: [],
 }
 
+export const QuickSilver : Expansion = {
+	name: 'Quick Silver',
+	encounterSets: [],
+}
+
 export const Hulk : Expansion = {
 	name: 'Hulk',
 	encounterSets: [],
@@ -97,6 +115,16 @@ export const Hulk : Expansion = {
 
 export const DoctorStrange : Expansion = {
 	name: 'Doctor Strange',
+	encounterSets: [],
+}
+
+export const AntMan : Expansion = {
+	name: 'Ant-Man',
+	encounterSets: [],
+}
+
+export const Wasp : Expansion = {
+	name: 'Wasp',
 	encounterSets: [],
 }
 
@@ -108,6 +136,7 @@ export const ExpansionsMap : Record<string, Expansion> = {
 	// Villain packs
 	[GreenGoblin.name]: GreenGoblin,
 	[WreckingCrew.name]: WreckingCrew,
+	[Kang.name]: Kang,
 
 	// Hero packs
 	[BlackWidow.name]: BlackWidow,
@@ -116,7 +145,10 @@ export const ExpansionsMap : Record<string, Expansion> = {
 	[Hulk.name]: Hulk,
 	[Thor.name]: Thor,
 	[MsMarvel.name]: MsMarvel,
+	[QuickSilver.name]: QuickSilver,
 	[ScarletWitch.name]: ScarletWitch,
+	[AntMan.name]: AntMan,
+	[Wasp.name]: Wasp,
 }
 
 export const ExpansionsList = Object.keys(ExpansionsMap).map(key => ExpansionsMap[key]).sort((a,b) => {

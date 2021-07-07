@@ -11,11 +11,6 @@ A companion app for the [Marvel Champions Living Card Game](https://boardgamegee
 ## Demo
 You can view the demo at https://ShalePumpkin.github.io/RogueChampions
 
-# Unmaintained!
-I do not plan to maintain this project, so I recommend you check out the forks: https://github.com/ShalePumpkin/RogueChampions/network/members
-
-Feel free to edit the code and **make your own version**. See sections below for some guidance on adding content, but you'll have to dive into the code.
-
 # Running It Locally
 This project requires node and npm to be installed. It is built on VueJS and TypeScript.
 

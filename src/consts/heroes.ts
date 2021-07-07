@@ -55,6 +55,12 @@ export const MsMarvel : Hero = {
 	startingHP: 19,
 }
 
+export const QuickSilver : Hero = {
+	name: 'Quick Silver',
+	requires: 'Quick Silver',
+	startingHP: 9
+}
+
 export const SheHulk : Hero = {
 	name: 'She-Hulk',
 	requires: CoreSet.name,
@@ -87,6 +93,18 @@ export const ScarletWitch : Hero = {
 	startingHP: 10,
 }
 
+export const AntMan : Hero = {
+	name: 'Ant-Man',
+	requires: 'Ant-Man',
+	startingHP: 12,
+}
+
+export const Wasp : Hero = {
+	name: 'Wasp',
+	requires: 'Wasp',
+	startingHP: 11,
+}
+
 export const HeroesMap : Record<string, Hero> = {
 	[BlackPanther.name]: BlackPanther,
 	[BlackWidow.name]: BlackWidow,
@@ -97,11 +115,14 @@ export const HeroesMap : Record<string, Hero> = {
 	[Hulk.name]: Hulk,
 	[IronMan.name]: IronMan,
 	[MsMarvel.name]: MsMarvel,
+	[QuickSilver.name]: QuickSilver,
 	[ScarletWitch.name]: ScarletWitch,
 	[SheHulk.name]: SheHulk,
 	[SpiderMan.name]: SpiderMan,
 	[SpiderWoman.name]: SpiderWoman,
 	[Thor.name]: Thor,
+	[AntMan.name]: AntMan,
+	[Wasp.name]: Wasp
 }
 
 export const HeroesList = Object.keys(HeroesMap).

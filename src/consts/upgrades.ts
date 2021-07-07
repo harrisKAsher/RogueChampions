@@ -12,8 +12,11 @@ import {Upgrades as spider_man} from "@/consts/upgrades/heroes/spider-man";
 import {Upgrades as spider_woman} from "@/consts/upgrades/heroes/spider-woman";
 import {Upgrades as captainmarvel} from "@/consts/upgrades/heroes/captainmarvel";
 import {Upgrades as doctorstrange} from "@/consts/upgrades/heroes/doctorstrange";
+import {Upgrades as quickSilver} from "@/consts/upgrades/heroes/quickSilver";
 import {Upgrades as hulk} from "@/consts/upgrades/heroes/hulk";
 import {Upgrades as she_hulk} from "@/consts/upgrades/heroes/she-hulk";
+import {Upgrades as antman} from "@/consts/upgrades/heroes/antMan";
+import {Upgrades as wasp} from "@/consts/upgrades/heroes/wasp";
 import {Upgrade, UpgradeCategory} from "@/types/upgrade";
 
 function addUpgrades (upgrades : Upgrade[]) {
@@ -38,8 +41,11 @@ addUpgrades(spider_woman)
 addUpgrades(she_hulk)
 addUpgrades(hawkeye)
 addUpgrades(doctorstrange)
+addUpgrades(quickSilver)
 addUpgrades(captainamerica)
 addUpgrades(hulk)
+addUpgrades(antman)
+addUpgrades(wasp)
 
 export const UpgradesList = Object.keys(UpgradesMap).map(key => {
 	return UpgradesMap[key]

@@ -64,6 +64,42 @@ export const MutagenFormula : EncounterSet = {
 	boss: true
 }
 
+export const Crossbones : EncounterSet = {
+	name: 'Crossbones',
+	difficulty: DF_STEP_SMALL,
+	boss: true
+}
+
+export const AbsorbingMan : EncounterSet = {
+	name: 'Absorbing Man',
+	difficulty: DF_STEP_SMALL,
+	boss: true
+}
+
+export const Taskmaster : EncounterSet = {
+	name: 'Taskmaster',
+	difficulty: DF_STEP_SMALL,
+	boss: true
+}
+
+export const Zola : EncounterSet = {
+	name: 'Zola',
+	difficulty: DF_STEP_MED,
+	boss: true
+}
+
+export const RedSkull : EncounterSet = {
+	name: 'Red Skull',
+	difficulty: DF_STEP_LARGE,
+	boss: true
+}
+
+export const Kang : EncounterSet = {
+	name: 'Kang',
+	difficulty: DF_STEP_MED,
+	boss: true
+}
+
 export const GoblinGimmicks : EncounterSet = {
 	name: 'Goblin Gimmicks',
 	difficulty: DF_STEP_LARGE,
@@ -105,22 +141,36 @@ export const EncounterSetsMap : Record<string, EncounterSet> = {
 	[Klaw.name]: Klaw,
 	[Ultron.name]: Ultron,
 
-	[WreckingCrew.name]: WreckingCrew,
-	[RiskyBusiness.name]: RiskyBusiness,
-	[MutagenFormula.name]: MutagenFormula,
-
-	[GoblinGimmicks.name]: GoblinGimmicks,
 	[TheDoomsdayChair.name]: TheDoomsdayChair,
 	[LegionOfHydra.name]: LegionOfHydra,
 	[Expert.name]: Expert,
 	[BombScare.name]: BombScare,
 	[MastersOfEvil.name]: MastersOfEvil,
+
+
+	[Crossbones.name]: Crossbones,
+	[AbsorbingMan.name]: AbsorbingMan,
+	[Taskmaster.name]: Taskmaster,
+	[Zola.name]: Zola,
+	[RedSkull.name]: RedSkull,
+
+
+
+
+
+	[WreckingCrew.name]: WreckingCrew,
+
+	[RiskyBusiness.name]: RiskyBusiness,
+	[MutagenFormula.name]: MutagenFormula,
+	[GoblinGimmicks.name]: GoblinGimmicks,
+
+	[Kang.name]: Kang,
+
 }
 
 export let EncounterSetsList = Object.keys(EncounterSetsMap).map(key => EncounterSetsMap[key])
 
 // KANG
-export const Kang = boss('Kang')
 export const Anachrona = quick('Anachronauts')
 export const MasterofTime = quick('Master of Time')
 export const Temporal  = quick('Temporal')
@@ -131,11 +181,6 @@ export const WeaponMaster = quick('Weapon Master')
 export const HydraPatrol = quick('Hydra Patrol')
 export const ExperimentalWeapons = quick('Experimental Weapons', DF_STEP_MED)
 
-export const Crossbones = boss('Crossbones')
-export const AbsorbingMan = boss('Absorbing Man')
-export const Taskmaster = boss('Taskmaster')
-export const Zola = boss('Zola')
-export const RedSkull = boss('Red Skull')
 
 EncounterSetsList = EncounterSetsList.sort((a,b) => {
 	return a.name < b.name ? -1 : 1
